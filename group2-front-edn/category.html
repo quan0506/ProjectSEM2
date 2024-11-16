@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--     LINK CSS      -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/category.css">
+    <!--      BOX ICONS      -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--   Link Swiper's CSS   -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body onload="showAllMovies()">
+      <!--NAVBAR-->
+      <header>
+        <a href="index.html" class="logo">
+            <i class='bx bxs-movie-play'></i>FilmHub
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!--   MENU NAVBAR   -->
+        <ul class="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="comingsoon.html">COMING SOON</a></li>
+            <li><a href="category.html" class="page-active">CATEGORY</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+        <div/>
+        <!-- <a href="login.html" class="btn">LOG IN</a>    -->
+    </header>
+
+    <!--  BODY   -->
+    <!--        BANNER     -->
+    <div class="banner" id="banner">
+        <img src="https://images.pexels.com/photos/6899765/pexels-photo-6899765.jpeg" alt="" style="width: 100%;height: 350px;">
+        <div class="banner-content">
+             <h2 id="banner-title">OUR CATEGORY</h2>
+             <p>To enhance your experience with your loved ones, we invite you to choose a genre for a better experience when watching movies</p>
+        </div>
+    </div>
+
+    <!--    CATEGORY   -->
+    <div class="movies-button">
+        <button id="opening"><p>OPENING</p></button>
+    </div>
+    
+    <div id="category-button" class="category-button">
+        <button id="btn" class="btn active"  data-category="ShowAll" onclick="showAllMovies()">Show All</button>
+        <button id="btn" class="btn" data-category="Adventure" onclick="getMoviesByCategory('Adventure')">Adventure</button>
+        <button id="btn" class="btn" data-category="Action" onclick="getMoviesByCategory('Action')">Action</button>
+        <button id="btn" class="btn" data-category="Science Fiction" onclick="getMoviesByCategory('Science Fiction')">Science Fiction</button>
+        <button id="btn" class="btn" data-category="Fantasy" onclick="getMoviesByCategory('Fantasy')">Fantasy</button>
+        <button id="btn" class="btn" data-category="Animation" onclick="getMoviesByCategory('Animation')">Animation</button>
+        <button id="btn" class="btn" data-category="Drama" onclick="getMoviesByCategory('Drama')">Drama</button>
+        <button id="btn" class="btn" data-category="Thriller" onclick="getMoviesByCategory('Thriller')">Thriller</button>
+        <button id="btn" class="btn" data-category="Horror" onclick="getMoviesByCategory('Horror')">Horror</button>
+        <button id="btn" class="btn" data-category="Comedy" onclick="getMoviesByCategory('Comedy')">Comedy</button>
+        <button id="btn" class="btn" data-category="History" onclick="getMoviesByCategory('History')">History</button>
+        <button id="btn" class="btn" data-category="Crime" onclick="getMoviesByCategory('Crime')">Crime</button>
+    </div>
+
+    
+
+    <!-- Movies Container-->
+    <div class="grid-container" id="moviesContainer">
+        <!-- Box 1 -->
+        <div class="box" id="movieDetails">
+            <div class="box-img">
+                <a href="details.html"><img src="#" alt=""></a>
+                <div class="overlay">
+                    <div class="button-container">
+                        <a href="details.html" class="detail-button">Detail</a>
+                    </div>
+                </div>
+                <div class="movie-label">PG</div>
+            </div>
+            <a href="details.html"><h3 id="movieName">Iron Man 1</h3></a>
+            <span id="duration">120 min |</span>
+        </div>          
+    </div>
+
+    <!--  FOOTER  -->
+    <footer>
+        <div class="footer-content">
+            <div class="left box-footer">
+                <a href="index.html" class="logo">
+                    <i class='bx bxs-movie-play'></i>FilmHub
+                </a>
+                <div class="content-box-footer">
+                    <p>Enhance your movie watching experience with your loved ones. If you have comments, please use the following methods</p>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-youtube' ></i></a>
+                    <a href="#"><i class='bx bxl-tiktok' ></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="center box-footer">
+                <h2>Address</h2>
+                <div class="content-box-footer">
+                    <div class="footer-address">
+                        <span><i class='bx bx-location-plus' ></i></span>
+                        <span class="footer-text">8A Ton That Thuyet Street, Nam Tu Liem, Ha Noi</span>
+                    </div>
+                    <div class="footer-phone">
+                        <span><i class='bx bxs-phone' ></i></span>
+                        <span class="footer-text">+84 441 678910</span>
+                    </div>
+                    <div class="footer-email">
+                        <span><i class='bx bxs-envelope' ></i></span>
+                        <span class="footer-text">team2t2203e@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right box-footer">
+                <h2>Subscribe To Get <br> Newsletter</h2>
+                <div class="content-box-footer">
+                    <form action="">
+                        <input type="email" class="email" placeholder="Enter Email..." required>
+                        <input type="submit" value="Subcribe" class="btn">
+                    </form>     
+                </div>
+            </div>      
+        </div>
+    </footer>
+
+
+
+
+    <!--Copyright-->
+    <div class="copyright">
+        <p>&#169; Team2-T2301E All Right Reserved.</p>
+    </div>
+
+    <script src="js/category.js"></script>
+</body>
+</html>

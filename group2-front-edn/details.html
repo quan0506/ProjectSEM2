@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+
+    <!--     LINK CSS      -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/details.css" />
+    <!--      BOX ICONS      -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <!--   Link Swiper's CSS   -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <header>
+      <a href="index.html" class="logo"> <i class="bx bxs-movie-play"></i>FilmHub </a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <!--   MENU NAVBAR   -->
+      <ul class="navbar">
+        <li><a href="index.html" class="home-active">HOME</a></li>
+        <li><a href="comingsoon.html">COMING SOON</a></li>
+        <li><a href="category.html">CATEGORY</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+      </ul>
+      <div/>
+    </header>
+
+    <!--  DETAIL MOVIES  -->
+    <section>
+      <p id="details-index">HOME > <span class="movieName">Iron man 1</span></p>
+      <div class="divider1"></div>
+      <div class="details">
+        <div class="posterUrl">
+          <img src="image/card1.jpg" alt="" />
+        </div>
+        <div class="details-infor">
+          <h2 class="movieName">Iron Man 1</h2>
+          <p class="description">
+            Tony Stark - A genius, billionaire, philanthropist and sole heir of the largest corporation in the country
+            at that time - Stark Industries.The group's products are all invented by Tony and his team. Whoever
+            possesses those weapons has the ability to become the strongest person in the world and become a threat to
+            all humanity.
+          </p>
+          <ul class="details-menu">
+            <!-- <li class="director">Director: Jon Favreau</li> -->
+            <!-- <li><strong>Performer:</strong> &nbsp; Robert Downey Jr, Terrence Howard, Jeff Bridges,..</li> -->
+            <li class="categoryNameList">Category: Action, Hero, Adventure</li>
+            <li class="duration">Duration: 120 min</li>
+            <li class="language">Language: English, VietNamese</li>
+            <li class="openingTime">Premiere Date : 16/05/2023</li>
+            <li class="closingTime">End Date : 16/05/2023</li>
+            <li class="imdbRatings">ImdbRatings: 7.151</li>
+            <li class="averageStar">Average Star : 5 <i class='bx bxs-star'></i></li>
+          </ul>
+          <a href="" class="btn" id="choose-pay-btn">Book Now</a>
+        </div>
+      </div>
+      <div class="divider2"></div>
+    </section>
+
+    <!--   TRAILER -->
+    <section class="trailer">
+      <div id="trailer-title">
+        <h1>TRAILER</h1>
+      </div>
+      <div class="iframe">
+        <iframe
+          width="1100"
+          height="700"
+          src="https://www.youtube.com/embed/Ke1Y3P9D0Bc?si=WyQ1De058ucFhLb7"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="divider3"></div>
+    </section>
+
+    <!--    COMMENT   -->
+    <section>
+      <div id="comment-title">
+        <h1>COMMENT</h1>
+      </div>
+      <div class="comment-session">
+        <div class="commentList">
+
+          <div class="comment">
+            <div class="flex">
+              <div class="user">
+                <div class="user-image"><img src="image/icon2.jpg" alt="" /></div>
+                <div class="user-meta">
+                  <div class="commentUsername"><p>@Camtasio369</p></div>
+                  <div class="starRate">
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                      <i class='bx bxs-star'></i>
+                  </div>
+                </div>
+              </div>
+              <div class="reply">
+                <div class="like icon"><i class="bx bx-like"></i></div>
+                <div class="dislike icon"><i class="bx bx-dislike"></i></div>
+                <div class="">Reply</div>
+              </div>
+            </div>
+            <div class="commentContent">
+              <p>It will be hard for newer generations to understand why some people value these films so much...</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!--INPUT COMMENT -->
+        <div class="comment" id="comment-input">
+          <div class="flex">
+            <div class="user">
+              <div class="user-image"><img src="image/icon2.jpg" alt=""></div>
+              <div class="user-meta">
+                <input class="commentUsername" id="commentUsername" placeholder="Input Your Name">
+                <div class="starRate">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+              </div>
+              </div>
+            </div>
+            <div class="reply">
+              <div class="like icon"><i class="bx bx-like"></i></div>
+              <div class="dislike icon"><i class="bx bx-dislike"></i></div>
+              <div class="">Reply</div>
+            </div>
+          </div>
+          <input type="text" id="comment-content" placeholder="Input Your Comment">
+          <button type="submit" id="comment-submit">Comment</button>
+        </div>
+      </div>
+    </section>
+
+    <!--  FOOTER  -->
+    <footer>
+      <div class="footer-content">
+        <div class="left box-footer">
+          <a href="index.html" class="logo"> <i class="bx bxs-movie-play"></i>FilmHub </a>
+          <div class="content-box-footer">
+            <p>
+              Enhance your movie watching experience with your loved ones. If you have comments, please use the
+              following methods
+            </p>
+            <div class="social">
+              <a href="#"><i class="bx bxl-facebook"></i></a>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+              <a href="#"><i class="bx bxl-youtube"></i></a>
+              <a href="#"><i class="bx bxl-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center box-footer">
+          <h2>Address</h2>
+          <div class="content-box-footer">
+            <div class="footer-address">
+              <span><i class="bx bx-location-plus"></i></span>
+              <span class="footer-text">8A Ton That Thuyet Street, Nam Tu Liem, Ha Noi</span>
+            </div>
+            <div class="footer-phone">
+              <span><i class="bx bxs-phone"></i></span>
+              <span class="footer-text">+84 441 678910</span>
+            </div>
+            <div class="footer-email">
+              <span><i class="bx bxs-envelope"></i></span>
+              <span class="footer-text">team2t2203e@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box-footer">
+          <h2>
+            Subscribe To Get <br/>
+            Newsletter
+          </h2>
+          <div class="content-box-footer">
+            <form action="">
+              <input type="email" class="email" placeholder="Enter Email..." required />
+              <input type="submit" value="Subcribe" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Copyright-->
+    <div class="copyright">
+      <p>&#169; Team2-T2301E All Right Reserved.</p>
+    </div>
+
+    <!-- Link to Customer JS -->
+    <script src="js/details.js"></script>
+    <script src="js/details_addcomment.js"></script>
+  </body>
+</html>

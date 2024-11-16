@@ -1,0 +1,215 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Ticket Movies Website</title>
+    
+    <!--     LINK CSS      -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--      BOX ICONS      -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--   Link Swiper's CSS   -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+     <!-- NOTIFICATION   -->
+    <div class="popup">
+        <span class="overlay-popup"></span>
+        <div class="contentBox">
+            <div class="close-popup">
+                <i class='bx bx-x'></i>
+            </div>
+            <div class="imgBx">
+                <img src="image/icon3.png" alt="">
+            </div>
+            <div class="content-popup">
+                <div>
+                    <h2>Discount up to</h2>
+                    <h1>15<sup>%</sup><span>When</span></h1>
+                    <p>registering and joining with relatives and many incentives for you when you become our member.</p>  
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!--NAVBAR-->
+     <header>
+        <a href="index.html" class="logo">
+            <i class='bx bxs-movie-play'></i>FilmHub
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!--  MENU NAVBAR -->
+        <ul class="navbar">
+            <!-- <li><a href="index.html" class="home-active">HOME</a></li> -->
+            <li><a href="index.html" class="page-active">HOME</a></li>
+            <li><a href="comingsoon.html">COMING SOON</a></li>
+            <li><a href="category.html">CATEGORY</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+        <div/>
+        <!-- <a href="#" class="btn">LOG IN</a>   -->
+    </header>
+
+    <!--  BODY  -->
+    <!-- SLIDE  -->
+     <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <!--Slide 1-->
+            <div class="swiper-slide container">
+                <img src="image/slide1.jpg" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Death on the Nile <br> Agatha Christie</h1>
+                    <a href="#movie" class="btn">Book Now</a>
+                    <a href="comingsoon.html" class="play">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+             <!--Slide 2-->
+             <div class="swiper-slide container">
+                <img src="image/slide2.jpg" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Maze Runner:<br> The Scorch Trials</h1>
+                    <a href="#movie" class="btn">Book Now</a>
+                    <a href="comingsoon.html" class="play">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+             <!--Slide 3-->
+             <div class="swiper-slide container">
+                <img src="image/slide3.jpg" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Avenger: <br> Age of Ultron</h1>
+                    <a href="#movie" class="btn">Book Now</a>
+                    <a href="comingsoon.html" class="play">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+        </div> 
+        <div class="swiper-pagination"></div>
+    </section> 
+
+    <!-- Search-box -->
+    <!-- <div class="container-search">
+        <input type="text" id="box" placeholder="Search anything..." class="search__box">
+        <i class='bx bx-search-alt' onclick="toggleShow()"></i>
+    </div> -->
+ 
+    <!-- Movies --> 
+    <section class="movies" id="movie">
+        <h2 class="heading">
+            Opening This Week
+        </h2>
+        <!-- Movies Container-->
+        <div class="grid-container">
+            <!-- Box 1 -->
+            <div class="box" id="movieDetails">
+                <div class="box-img">
+                    <a href="details.html"><img src="#" alt=""></a>
+                    <div class="overlay">
+                        <div class="button-container">
+                            <a href="choosepay.html" class="book-button">Book</a>
+                            <a href="details.html" class="detail-button">Detail</a>
+                        </div>
+                    </div>
+                    <div class="movie-label">PG</div>
+                </div>
+                <a href="details.html"><h3 id="movieName">Iron Man 1</h3></a>
+                <span id="duration">120 min |</span>
+            </div>          
+        </div>
+    </section>
+
+    <!--  PAGINATION  -->
+    <div id="movie"></div>
+    <div id="pagination" class="pagination"></div>
+
+    <!-- COMING SOON-->
+    <section class="coming" id="coming">
+        <h2 class="heading">Coming Soon</h2>
+        <!-- Coming Container-->
+        <div class="coming-container swiper" >
+            <div class="swiper-wrapper" id="swiperWrapper">
+                <!-- Box 1-->
+                <!-- <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="" alt="">
+                    </div>
+                    <h3>Tranformer 4</h3>
+                    <span>100 min | Action</span>
+                </div> -->
+               
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!--  FOOTER  -->
+    <footer>
+        <div class="footer-content">
+            <div class="left box-footer">
+                <a href="index.html" class="logo">
+                    <i class='bx bxs-movie-play'></i>FilmHub
+                </a>
+                <div class="content-box-footer">
+                    <p>Enhance your movie watching experience with your loved ones. If you have comments, please use the following methods</p>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube' ></i></a>
+                        <a href="#"><i class='bx bxl-tiktok' ></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center box-footer">
+                <h2>Address</h2>
+                <div class="content-box-footer">
+                    <div class="footer-address">
+                        <span><i class='bx bx-location-plus' ></i></span>
+                        <span class="footer-text">8A Ton That Thuyet Street, Nam Tu Liem, Ha Noi</span>
+                    </div>
+                    <div class="footer-phone">
+                        <span><i class='bx bxs-phone' ></i></span>
+                        <span class="footer-text">+84 441 678910</span>
+                    </div>
+                    <div class="footer-email">
+                        <span><i class='bx bxs-envelope' ></i></span>
+                        <span class="footer-text">team2t2203e@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right box-footer">
+                <h2>Subscribe To Get <br> Newsletter</h2>
+                <div class="content-box-footer">
+                    <form action="">
+                        <input type="email" class="email" placeholder="Enter Email..." required>
+                        <input type="submit" value="Subcribe" class="btn">
+                    </form>     
+                </div>
+            </div>      
+        </div>
+    </footer>
+
+    <!--Copyright-->
+    <div class="copyright">
+        <p>&#169; Team2-T2301E All Right Reserved.</p>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Link to Customer JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

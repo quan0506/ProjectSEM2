@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Create Movie </title>
+
+    <!--     LINK CSS      -->
+    <link rel="stylesheet" href="css/createmovie.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--      BOX ICONS      -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--   Link Swiper's CSS   -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!--NAVBAR-->
+    <header>
+        <a href="index.html" class="logo">
+            <i class='bx bxs-movie-play'></i>FilmHub
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!--   MENU NAVBAR   -->
+        <ul class="navbar">
+            <li><a href="index.html" class="home-active">HOME</a></li>
+            <li><a href="comingsoon.html">COMING SOON</a></li>
+            <li><a href="category.html">CATEGORY</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+        <div/>    
+    </header>
+
+    <body class="post-form">
+        <img src="image/background8.jpg" alt="image" class="post-banner">
+
+        <div class="wrapper">
+            <!-- <form action="" method="POST" enctype="multipart/form-data"> -->
+                <!--Information Start-->
+                <div class="input_group">
+                    <div class="input_box movieName">
+                        <input type="text" placeholder="Movie Name" required class="name" name="movieName" value="movie">
+                        <i class='bx bxs-user-circle'></i>
+                    </div>
+                    <div class="input_box language">
+                        <select name="language" id="#" value="en">
+                            <option value="...">Language</option>
+                            <option value="en" default>en</option>
+                            <option value="vi">vi</option>
+                        </select>
+                        <i class='bx bxs-user-voice'></i>
+                    </div>
+                </div>
+                <!-- INFORMATION MOVIE-->
+                <div class="input_group">
+                    <div class="input_box poster">
+                        <input type="file" required class="name" id="posterFileInput" name="poster">
+                        <i class='bx bxs-file-image'></i>
+                    </div>
+                    <div class="input_box duration">
+                        <input type="text" placeholder="Duration" required class="name" name="duration" value="">
+                        <i class='bx bxs-time' ></i>
+                    </div>
+                    <div class="input_box imdbRatings">
+                        <input type="text" placeholder="Rating" required class="name" name="imdbRatings" value="">
+                        <i class='bx bx-bar-chart'></i>
+                    </div>
+                    <div class="input_box movieLabel">
+                        <select name="movieLabel" id="" >
+                            <option value="...">Label</option>
+                            <option value="P" selected>P</option>
+                            <option value="C12">C12</option>
+                            <option value="C18">C18</option>
+                        </select>
+                        <i class='bx bxs-label' ></i>
+                    </div>
+                </div>
+
+                <!-- URL LINK-->
+                <div class="input_group">
+                    <div class="input_box  youtubeLink">
+                        <input type="url" placeholder="Youtube trailer Link" required class="name" name="iframe" id="youtubeLink" value="">
+                        <i class='bx bx-link-alt'></i>
+                    </div>
+                </div>
+
+                <!-- Timer -->
+                <div class="input_group">
+                    <div class="input_time">
+                        <h4>OpeningTime</h4>
+                        <div class="input_box openingTime">
+                            <input type="date" placeholder="#" required class="name" name="openingTime"
+                            value="">
+                            <i class='bx bxs-calendar'></i>       
+                        </div>
+                    </div>
+                    <div class="input_time">
+                        <h4>ClosingTime</h4>
+                        <div class="input_box closingTime">
+                            <input type="date" placeholder="#" required class="name" name="closingTime"
+                            value="">
+                            <i class='bx bxs-calendar'></i>
+                        </div>
+                    </div>    
+                </div>
+    
+                <!--Information End-->
+                <div class="input_group">
+                    <div class="input_box categoryList">
+                        <input type="tel" name="categoryList" class="name" placeholder="Category" required value="">
+                        <i class='bx bxs-category' ></i>
+                        <div action="" class="categoryForm" id="category-container">
+                            <div class="category-box">
+                                <input type="checkbox" id="category1" name="category1" value="Drama">
+                                <label for="category1">Drama</label><br> 
+                            </div>
+                            <div class="category-box">
+                                <input type="checkbox" id="category2" name="category2" value="Fantasy">
+                                <label for="category2">Fantasy</label><br>
+                            </div>
+                            <div class="category-box">
+                                <input type="checkbox" id="category3" name="category3" value="Animation">
+                                <label for="category3">Animation</label><br><br>
+                            </div>
+                            <div class="category-box">
+                                <input type="checkbox" id="category4" name="category4" value="Crime">
+                                <label for="category4">Crime</label><br><br>
+                            </div>
+                            <div class="category-box">
+                                <input type="checkbox" id="category5" name="category5" value="Comedy">
+                                <label for="category5">Comedy</label><br><br> 
+                            </div>
+                            <div class="category-box">
+                                <input type="checkbox" id="category6" name="category6" value="History">
+                                <label for="category6">History</label><br><br>
+                            </div>
+                            <div class="category-box">
+                                <input type="checkbox" id="category7" name="category7" value="Science Fiction">
+                                <label for="category7">Science Fiction</label><br><br>
+                            </div>
+                            <div class="category-box">
+                                <input type="checkbox" id="category8" name="category8" value="Adventure">
+                                <label for="category8">Adventure</label><br><br> 
+                            </div>
+                            <div class="category-box">
+                                <input type="checkbox" id="category9" name="category9" value="Thriller">
+                                <label for="category9">Thriller</label><br><br>
+                            </div>
+                            <div class="category-box">
+                                <input type="checkbox" id="category10" name="category10" value="Horror">
+                                <label for="category10">Horror</label><br><br> 
+                            </div>
+                            <div class="category-box">
+                                <input type="checkbox" id="category11" name="category11" value="Action">
+                                <label for="category11">Action</label><br><br>
+                            </div> 
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input_group">
+                    <div class="input_box description">
+                        <input type="tel" name="description" class="name" placeholder="Description" required
+                        value="">
+                        <i class='bx bxs-comment-detail'></i>
+                    </div>
+                </div>
+
+                <!-- End-->  
+                <div class="input_group">
+                    <div class="input_button">
+                        <button class="btn"><a href="index.html">BACK</a></button>
+                        <button type="submit" class="btn" id="btnSubmit">POST</button>
+                    </div>
+                </div>
+            <!-- </form> -->
+        </div>   
+    </body>  
+
+    <script src="js/createmovie.js"></script>
+</body>
+</html>

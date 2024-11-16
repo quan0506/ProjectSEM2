@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIES</title>
+    
+    <!--     LINK CSS      -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/comingsoon.css">
+    <!--      BOX ICONS      -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--   Link Swiper's CSS   -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!--NAVBAR-->
+    <header>
+        <a href="index.html" class="logo">
+            <i class='bx bxs-movie-play'></i>FilmHub
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!--   MENU NAVBAR   -->
+        <ul class="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="comingsoon.html" class="page-active">COMING SOON</a></li>
+            <li><a href="category.html">CATEGORY</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+        <div/>
+        <!-- <a href="login.html" class="btn">LOG IN</a>    -->
+    </header>
+
+    <!--  BODY  -->
+
+    <!--        BANNER     -->
+      <div class="banner" id="banner">
+        <img src="https://images.pexels.com/photos/6899765/pexels-photo-6899765.jpeg" alt="" style="width: 100%;height: 400px;">
+        <div class="banner-content">
+             <h2 id="banner-title">COMING SOON</h2>
+             <p>Enhance your movie watching experience with your loved ones. If you have comments, please use the following methods</p>
+        </div>
+    </div>
+
+    <!-- Movies COMMING SOON --> 
+    <section class="movies" id="movie">
+        <h2 class="heading">
+            COMMING SOON
+        </h2>
+        <!-- Movies Container-->
+        <div class="grid-container">
+                <!-- Box 1 -->
+                <div class="box" id="movieDetails">
+                    <div class="box-img">
+                        <a href="details.html"><img src="#" alt=""></a>
+                        <div class="overlay">
+                            <div class="button-container">
+                                <a href="details.html" class="detail-button">Detail</a>
+                            </div>
+                        </div>
+                        <div class="movie-label">PG</div>
+                    </div>
+                    <a href="details.html"><h3 id="movieName">Iron Man 1</h3></a>
+                    <span id="duration">120 min |</span>
+                </div>          
+            </div>
+    </section>
+
+     <!--  PAGINATION  -->
+     <div id="movie"></div>
+     <div id="pagination" class="pagination"></div>
+    
+    <!--  FOOTER  -->
+    <footer>
+        <div class="footer-content">
+            <div class="left box-footer">
+                <a href="index.html" class="logo">
+                    <i class='bx bxs-movie-play'></i>FilmHub
+                </a>
+                <div class="content-box-footer">
+                    <p>Enhance your movie watching experience with your loved ones. If you have comments, please use the following methods</p>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-youtube' ></i></a>
+                    <a href="#"><i class='bx bxl-tiktok' ></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="center box-footer">
+                <h2>Address</h2>
+                <div class="content-box-footer">
+                    <div class="footer-address">
+                        <span><i class='bx bx-location-plus' ></i></span>
+                        <span class="footer-text">8A Ton That Thuyet Street, Nam Tu Liem, Ha Noi</span>
+                    </div>
+                    <div class="footer-phone">
+                        <span><i class='bx bxs-phone' ></i></span>
+                        <span class="footer-text">+84 441 678910</span>
+                    </div>
+                    <div class="footer-email">
+                        <span><i class='bx bxs-envelope' ></i></span>
+                        <span class="footer-text">team2t2203e@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right box-footer">
+                <h2>Subscribe To Get <br> Newsletter</h2>
+                <div class="content-box-footer">
+                    <form action="">
+                        <input type="email" class="email" placeholder="Enter Email..." required>
+                        <input type="submit" value="Subcribe" class="btn">
+                    </form>     
+                </div>
+            </div>      
+        </div>
+    </footer>
+
+
+    <!--Copyright-->
+    <div class="copyright">
+        <p>&#169; Team2-T2301E All Right Reserved.</p>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Link to Customer JS -->
+    <script src="js/comingsoon.js"></script>
+</body>
+</html>
+    
+</body>
+</html>

@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHOOSE & PAY TICKET</title>
+
+  <!--     LINK CSS      -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/choosepay.css" />
+  <!--      BOX ICONS      -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!--   Link Swiper's CSS   -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <header>
+        <a href="index.html" class="logo">
+            <i class='bx bxs-movie-play'></i>FilmHub
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!--   MENU NAVBAR   -->
+        <ul class="navbar">
+            <li><a href="index.html" class="home-active">HOME</a></li>
+            <li><a href="comingsoon.html">COMING SOON</a></li>
+            <li><a href="category.html">CATEGORY</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+        <div/>
+        <!-- <a href="login.html" class="btn">LOG IN</a>    -->
+    </header>
+
+    <!-- BODY -->
+    <img src="image/background1.jpg" alt="" class="body-container-img">
+    <div class="body-container">
+        <div class="choice-container">
+            <div class="choice-container-left">
+                <div class="movie-content">
+                    <ul class="showcase">
+                        <li>
+                            <div class="seat selected" style="background-color: #6feaf6;"></div>
+                            <p>Selected</p>
+                        </li>
+                        <li>
+                            <div class="seat occupied"></div>
+                            <p>Occupied</p>
+                        </li>
+                    </ul>
+                    <ul class="showcase">
+                        <li>
+                            <div class="seat vip"></div>
+                            <p>VIP</p>
+                        </li>
+                        <li>
+                            <div class="seat nor"></div>
+                            <p>NOR</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="seat-container">
+                    <div class="screen">SCREEN</div>
+
+                    <div class="seat-container-inside">
+
+                    </div>
+                </div>
+            </div>    
+            <div class="pay-container-right">
+                <div class="theater-choices choice">
+                    <p class="choice-label">Theater :</p>
+                    <select id="Theater">
+                        <option value="#"><p>8A Tôn Thất Thuyết</p></option>
+                        <option value="#">...</option>
+                    </select>
+                </div>
+                <div class="day-choices choice">
+                    <p class="choice-label">Day :</p>
+                    <select id="day">
+                    </select> 
+                </div>
+                <div class="time-choices choice">
+                    <p class="choice-label">Time :</p>
+                    <select id="choosing-time">
+
+                    </select>
+                </div>
+                <div class="total">
+                    <label>Total Amount : </label>
+                    <span id="totalAmount">0</span>VNĐ
+                </div>
+                
+                <div class="pay-button">
+                    <a href="details.html" class="btn">BACK</a>  
+                    <a href="#" class="btn" id="open-payment-form">CREATE ORDER</a>
+                        <!-- NOFICATION TO PAYMENT FORM -->
+                        <div id="overlay" class="hidden"></div>
+                        <div id="notification" class="hidden payment-form">
+                            <div class="wrapper">
+                                <h2>Payment Form</h2>
+                                <form action="" method="post">
+                                    <!--Account Information Start-->
+                                    <h4>Account</h4>
+                                    <div class="input_group">
+                                        <div class="input_box">
+                                            <input type="text" placeholder="Full Name" required class="name" id="full-name-input">
+                                            <i class='bx bxs-user-circle'></i>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="input_group">
+                                        <div class="input_box">
+                                            <input type="email" placeholder="Email" required class="name" id="email-input">
+                                            <i class='bx bxs-envelope'></i>
+                                        </div>
+                                    </div>
+                                    <div class="input_group">
+                                        <div class="input_box">
+                                            <input type="text" placeholder="Address" required class="name" id="address-input">
+                                            <i class='bx bxs-location-plus'></i>
+                                        </div>
+                                    </div>
+                        
+                                    <!--Account Information End-->
+                                    <!--DOB & Gender Start-->
+                                    <div class="input_group">
+                                        <div class="input_box">
+                                            <h4>Date Of Birth</h4>
+                                            <input type="date" placeholder="#" required class="name" name="openingTime" id="dob-input">
+                                            <i class='bx bxs-calendar' style="height: 49px;top: 30px;"></i>
+                                        </div>
+                                        
+                                    </div>
+                        
+                                    <!--Payment Details End-->
+                                    <div class="input_group">
+                                        <div class="input_box" id="input_box-button">
+                                            <button id="close-payment-form">BACK</button>
+                                            <button type="submit" id="create-order-btn">CREATE ORDER</button>
+                                        </div>
+                                    </div>
+                        
+                                </form>
+                            </div>
+                        </div>
+                </div>
+            </div>
+    
+        </div>    
+    </div>
+        
+
+  <script src="js/choosingSeat.js"></script>
+</body>

@@ -1,0 +1,151 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* RESET CSS */
+*{ 
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+/* Variavles */
+:root{
+    --main-color: #ff2c1f;
+    --text-color: #020307;
+    --bg-color: #fff;
+}
+/* Custom Scroll Bar */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: var(--text-color);
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+body{
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+section{
+    padding: 4.5rem 0 1.5rem;
+}
+
+/*****    BODY   *******/
+
+/****  BANNER *****/
+.banner {
+    position: relative;
+}
+  
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(255, 44, 31, 0.8); */
+    padding: 20px;
+    text-align: center;
+    color: white;
+} 
+.banner-content h2{
+    font-size: 25px;
+}
+.banner-content p{
+    font-size: 15px;
+}
+
+/*   CATEGORY   */
+.movies-button {
+   margin-top: 20px;
+   text-align: center;
+}  
+.movies-button p{
+    font-size: 30px;
+}
+.movies-button  button{
+    font-size: 35px;
+    font-weight: 550;
+    padding-left: 20px;
+    border: none; 
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+.movies-button button:focus {
+    outline: none;
+}
+#opening:focus {
+    background-color: var(--text-color);
+    color: var(--main-color);
+}  
+
+.category-button{
+    width: 1000px;
+    margin: 20px auto 0 auto;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.category-button .btn{
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 0.7rem 1.4rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-weight: 550;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.btn.active {
+    background-color: var(--main-color);
+    color: var(--bg-color); 
+    border: 1px solid var(--main-color); 
+}
+.category-button .btn:hover{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+
+
+
+/**   Responsive CSS   **/
+@media(max-with:1080px){
+    .category-button {
+        width: 90%;
+    }
+}
+
+@media(max-width:991px){
+    .category-button {
+        width: 90%;
+    }    
+}
+
+@media(max-width:774px){
+    .category-button {
+        width: 80%;
+    }
+}
+@media(max-width:472px){
+    .category-button {
+        width: 70%;
+    }
+    
+}
+@media(max-width:370px){
+    .category-button {
+        width: 60%;
+    }
+}
+
